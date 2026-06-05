@@ -34,6 +34,8 @@ return {
             vim.keymap.set("n", "<leader>sg", builtin.live_grep, { desc = "Live grep" })
             vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "Buffers" })
             vim.keymap.set("n", "<leader>sh", builtin.help_tags, { desc = "Help" })
+            vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "Resume search" })
+            vim.keymap.set("n", "<leader>sm", builtin.resume, { desc = "Search marks" })
 
             vim.keymap.set("n", "gd", builtin.lsp_definitions, { desc = "Goto definition" })
             vim.keymap.set("n", "gr", builtin.lsp_references, { desc = "Goto references" })
@@ -44,6 +46,8 @@ return {
             vim.keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "Git commits" })
             vim.keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "Git branches" })
             vim.keymap.set("n", "<leader>gs", builtin.git_status, { desc = "Git status" })
+
+            vim.keymap.set('n', '<leader>q', builtin.diagnostics, { desc = 'Open diagnostics list' })
         end,
     },
 }
