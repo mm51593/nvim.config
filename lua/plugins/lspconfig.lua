@@ -20,9 +20,9 @@ return {
                         })
                     end
 
-                    map("gd", vim.lsp.buf.definition, "Go to definition")
-                    map("gr", vim.lsp.buf.references, "References")
-                    map("gi", vim.lsp.buf.implementation, "Implementation")
+                    -- map("gd", vim.lsp.buf.definition, "Go to definition")
+                    -- map("gr", vim.lsp.buf.references, "References")
+                    -- map("gi", vim.lsp.buf.implementation, "Implementation")
                     map("K", vim.lsp.buf.hover, "Hover")
 
                     map("<leader>rn", vim.lsp.buf.rename, "Rename")
