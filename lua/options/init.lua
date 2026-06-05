@@ -29,3 +29,13 @@ vim.opt.splitright = true
 vim.opt.updatetime = 200
 
 vim.opt.undofile = true
+
+local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
+vim.api.nvim_create_autocmd('TextYankPost', {
+    callback = function()
+        vim.highlight.on_yank()
+    end,
+    group = highlight_group,
+    pattern = '*',
+})
+
