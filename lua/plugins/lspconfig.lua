@@ -13,6 +13,12 @@ return {
                 callback = function(event)
                     local buf = event.buf
 
+                    local client = vim.lsp.get_client_by_id(event.data.client_id)
+                    if not client then return end
+                    if client.server_capabilities.inlayHintProvider then
+                        vim.lsp.inlay_hint.enable(true, { bufnr = buf })
+                    end
+
                     local map = function(lhs, rhs, desc)
                         vim.keymap.set("n", lhs, rhs, {
                             buffer = buf,
