@@ -35,7 +35,7 @@ return {
             vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "Buffers" })
             vim.keymap.set("n", "<leader>sh", builtin.help_tags, { desc = "Help" })
             vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "Resume search" })
-            vim.keymap.set("n", "<leader>sm", builtin.resume, { desc = "Search marks" })
+            vim.keymap.set("n", "<leader>sm", builtin.marks, { desc = "Search marks" })
 
             vim.keymap.set("n", "gd", builtin.lsp_definitions, { desc = "Goto definition" })
             vim.keymap.set("n", "gr", builtin.lsp_references, { desc = "Goto references" })
