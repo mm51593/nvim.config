@@ -21,7 +21,7 @@ return {
                         prompt_position = "top",
                     },
                     file_ignore_patterns = {
-                        ".git",
+                        ".git/",
                     },
                 },
                 extensions = {
