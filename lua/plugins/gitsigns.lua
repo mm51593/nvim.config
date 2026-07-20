@@ -7,6 +7,7 @@ return {
 
                 vim.keymap.set("n", "]h", gs.next_hunk, { buffer = bufnr })
                 vim.keymap.set("n", "[h", gs.prev_hunk, { buffer = bufnr })
+                vim.keymap.set("n", "<leader>gd", gs.diffthis, { buffer = bufnr })
             end,
         },
     },
